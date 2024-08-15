@@ -48,19 +48,20 @@ class TaskManager:
 task_manager = TaskManager()
 
 # Добавление задач
-task1 = Task("Купить продукты", "2023-10-10")
-task2 = Task("Сделать домашнее задание", "2023-10-11", True)
-task3 = Task("Позвонить маме", "2023-10-12")
+task1 = Task("Купить продукты", "2024-08-10", True)
+task2 = Task("Сделать домашнее задание", "2024-08-15", True)
+task3 = Task("Позвонить маме", "2024-09-12")
 
-task_manager.add_task(task1)
-task_manager.add_task(task2)
-task_manager.add_task(task3)
 
 # Показать невыполненные задачи
 task_manager.show_pending_tasks()
 
 # Удалить выполненные задачи
 task_manager.remove_completed_tasks()
+
+task_manager.add_task(task1)
+task_manager.add_task(task2)
+task_manager.add_task(task3)
 
 print("\nПосле удаления выполненных задач:")
 task_manager.show_pending_tasks()
