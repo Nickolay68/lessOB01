@@ -51,10 +51,13 @@ task_manager = TaskManager()
 task1 = Task("Купить продукты", "2024-08-10", True)
 task2 = Task("Сделать домашнее задание", "2024-08-15", True)
 task3 = Task("Позвонить маме", "2024-09-12")
-
+task4 = Task("прослушать U01", "2024-08-15", True)
+task5 = Task("Сдать задание OG04", "2024-08-16")
 
 # Показать невыполненные задачи
 task_manager.show_pending_tasks()
+
+task_manager.add_task(task5)
 
 # Удалить выполненные задачи
 task_manager.remove_completed_tasks()
